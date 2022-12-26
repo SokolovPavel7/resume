@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Roboto&family=Unbounded&display=swap');
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  background: #f1f1f1;
+  color: #0f141e;
+}
+
+a {
+  color: DimGrey;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: MediumBlue;
+  opacity: 0.6;
+}
+
+a:active {
+  color: #800000;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+}
+.info-text {
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.info-text h4 {
+  font-size: 20px;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: normal;
+  color: #808080;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+@media (max-width: 650px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card table {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.list li {
+  list-style: none;
+  padding: 2px;
+}
+
+.list li:nth-child(even) {
+  background: LightGrey;
+}
+
+.link-list {
+  padding: 10px 10px 10px 40px;
+  list-style: none;
+}
+
+.link-list li:nth-child(even) {
+  background: Cornsilk;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  padding: 3px 5px;
+}
+
+@media (max-width: 650px) {
+  .table thead tr th {
+    margin-left: 0;
+    margin: auto;
+    padding: 10px;
+    display: block;
+  }
+
+  .table tbody tr td {
+    margin-left: 0;
+    margin: auto;
+    padding: 10px;
+    display: block;
+  }
+}
+.table thead tr:nth-child(1) {
+  background: CadetBlue;
+}
+
+.table tbody td:nth-child(1),
+.table tbody td:nth-child(2),
+.table tbody td:nth-child(3) {
+  background: LightGray;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.bg-yellow {
+  background: Moccasin;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.btn {
+  background: #87cefa;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  /* display: inline-block; */
+  margin-right: 20px;
+  width: 50%;
+  /* width: calc(50% - 20px); */
+}
+
+@media (max-width: 650px) {
+  .form-row {
+    display: block;
+  }
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box; /*размер бокса в границах бокса*/
+  border: none; /*убираем границу поля ввода*/
+  background: transparent; /*прозщрачный фон*/
+  border-bottom: 1px solid #ccc;
+  color: #000; /*цвет ввода сообщения -черный*/
+  padding: 15px 0 10px; /*верхний 15, нижний 10*/
+  /* outline: none; - удаление интерактивной рамки при вводе */
+  font-family: inherit;
+}
